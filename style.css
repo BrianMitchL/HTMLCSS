@@ -17,9 +17,9 @@ footer, .content {
 }
 
 #title {
-    margin: auto;
+    margin:auto;
+    width: 50%;
     text-align: center;
-    position:relative;
     animation:title 1s;
     animation-iteration-count: infinite;
     -webkit-animation:title 1s; /* Safari and Chrome */
@@ -34,11 +34,16 @@ footer, .content {
     font-size: 120%;
 }
 
-.logo img {
-    margin-right: auto;
-    margin-left: auto;
-    width:20%;
-    height:20%;
+.logo {
+    float:right;
+    margin-right:10%;
+    width: 10%;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+#navbar {
+    margin-top: 1%;
 }
 
 #navbar ul {
@@ -49,12 +54,23 @@ footer, .content {
     display: inline;
 }
 
+h4 {
+    font-size: 150%;
+}
+
+.content img {
+    padding-top: 1%;
+}
 #rocks {
     background-color:lightslategrey;
+    margin: 3%;
+    padding: 1%;
 }
 
 #rolls {
     background-color:wheat;
+    margin: 3%;
+    padding: 1%;
 }
 
 /* Title animation (CSS3) */
@@ -78,6 +94,7 @@ footer, .content {
         -ms-transform: rotate(360deg); /* IE 9 */}
 }
 
+/* This fails to validate, but is required for the 100% working CSS3 animation on Chrome and Safari */
 @-webkit-keyframes title /* Safari and Chrome */
 {
     0%   {color:red;
