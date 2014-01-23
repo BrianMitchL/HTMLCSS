@@ -1,14 +1,11 @@
 /* Lab 2 Brian Mitchell and Henry Megarry */
 
-div {
-    border-style: solid;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color:lightgoldenrodyellow;
     padding: 1%;
+    min-width:650px;
 }
 
 footer, .content {
@@ -44,6 +41,9 @@ footer, .content {
 
 #navbar {
     margin-top: 1%;
+
+    padding: 1%;
+    width:80%;
 }
 
 #navbar ul {
@@ -51,7 +51,25 @@ footer, .content {
 }
 
 #navbar li {
-    display: inline;
+    float: left;
+}
+
+#navbar a:link,a:visited
+{
+    display:block;
+    width:120px;
+    font-weight:bold;
+    color:lightgoldenrodyellow;
+    background-color: indianred;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#navbar a:hover,a:active
+{
+    background-color:brown;
 }
 
 h4 {
